@@ -14,63 +14,53 @@
     
     body {
       margin: 0; padding: 0; min-width: 100%; width: 100% !important; height: 100% !important;
-      -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;
+      background-color: #00050f;
     }
-    img {
-      border: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic;
+    img { border: 0; outline: none; text-decoration: none; -ms-interpolation-mode: bicubic; }
+    table, td { mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+    a { text-decoration: none; }
+    
+    .panel {
+      background-color: rgba(0, 20, 40, 0.62);
+      border: 1px solid rgba(0, 242, 255, 0.35);
+      box-shadow: 0 0 8px rgba(0, 242, 255, 0.35), 0 0 20px rgba(0, 242, 255, 0.12);
+      border-radius: 12px;
+      padding: 24px;
     }
-    table, td {
-      mso-table-lspace: 0pt; mso-table-rspace: 0pt;
-    }
-    a {
-      text-decoration: none;
-    }
+
     /* Responsive */
-    @media only screen and (max-width: 600px) {
-      .email-container {
-        width: 100% !important;
-        max-width: 100% !important;
-      }
+    @media only screen and (max-width: 1100px) {
+      .email-container { width: 100% !important; max-width: 100% !important; padding: 0 16px !important; }
       .stack-column {
-        display: block !important;
-        width: 100% !important;
-        max-width: 100% !important;
-        direction: ltr !important;
-        margin-left: 0 !important;
-        margin-right: 0 !important;
-        margin-bottom: 20px !important;
+        display: block !important; width: 100% !important; max-width: 100% !important;
+        direction: ltr !important; margin-bottom: 20px !important; padding: 0 !important;
+        text-align: center !important;
       }
-      .hero-title {
-        font-size: 28px !important;
-        line-height: 32px !important;
-      }
-      .panel-pad {
-        padding: 16px !important;
-      }
+      .stack-column img { margin: 0 auto !important; }
     }
   </style>
 </head>
-<body style="margin: 0; padding: 0; background-color: #00050f;" bgcolor="#00050f">
-  <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#00050f" style="background-color: #00050f; background-image: radial-gradient(ellipse 75% 55% at 45% 25%, rgba(0, 60, 80, 0.35) 0%, transparent 65%), radial-gradient(ellipse 50% 40% at 85% 85%, rgba(0, 100, 120, 0.12) 0%, transparent 55%); font-family: 'Inter', Arial, sans-serif;">
+<body style="margin: 0; padding: 0; background-color: #00050f; color: #ffffff; font-family: 'Inter', Arial, sans-serif;">
+  <table width="100%" border="0" cellpadding="0" cellspacing="0" bgcolor="#00050f" style="background-color: #00050f; background-image: radial-gradient(ellipse 75% 55% at 45% 25%, rgba(0, 60, 80, 0.35) 0%, transparent 65%), radial-gradient(ellipse 50% 40% at 85% 85%, rgba(0, 100, 120, 0.12) 0%, transparent 55%);">
     <tr>
-      <td align="center" valign="top">
+      <td align="center" valign="top" style="padding: 48px 0;">
         <!--[if mso]>
-        <table align="center" border="0" cellspacing="0" cellpadding="0" width="600">
+        <table align="center" border="0" cellspacing="0" cellpadding="0" width="1140">
         <tr>
-        <td align="center" valign="top" width="600">
+        <td align="center" valign="top" width="1140">
         <![endif]-->
         
-        <table class="email-container" width="600" border="0" cellpadding="0" cellspacing="0" style="max-width: 600px; width: 100%; margin: 0 auto; padding-top: 24px; padding-bottom: 24px;">
+        <table class="email-container" width="1140" border="0" cellpadding="0" cellspacing="0" style="max-width: 1140px; width: 100%; margin: 0 auto;">
           
           <!-- NAVBAR -->
           <tr>
-            <td align="right" valign="middle" style="padding-bottom: 24px; padding-right: 20px;">
+            <td align="right" valign="middle" style="padding-bottom: 40px;">
               <table border="0" cellpadding="0" cellspacing="0" align="right">
                 <tr>
                   <td valign="middle" style="padding-right: 12px;">
-                    <img src="images/vyuhalogo.png" width="44" height="44" alt="Vyuha AI" style="display: block; width: 44px; height: 44px;">
+                    <img src="images/vyuhalogo.png" width="44" height="44" alt="Vyuha AI" style="display: block;">
                   </td>
-                  <td valign="middle" style="font-family: 'Inter', Arial, sans-serif; font-size: 26px; font-weight: 700; color: #ffffff; letter-spacing: 0.05em;">
+                  <td valign="middle" style="font-size: 26px; font-weight: 700; color: #ffffff; letter-spacing: 0.05em;">
                     Vyuha<span style="color: #00a8b5;">.ai</span>
                   </td>
                 </tr>
@@ -80,101 +70,105 @@
 
           <!-- HERO SECTION -->
           <tr>
-            <td align="center" valign="top" style="padding-bottom: 32px;">
-              <!--[if mso]>
+            <td align="center" valign="middle" style="padding-bottom: 50px;">
               <table border="0" cellpadding="0" cellspacing="0" width="100%">
-              <tr>
-              <td valign="middle" width="200" align="center">
-              <![endif]-->
-              <table border="0" cellpadding="0" cellspacing="0" width="200" class="stack-column" style="display: inline-block; vertical-align: middle;">
                 <tr>
-                  <td align="center" valign="middle">
-                    <img src="images/faceimg.png" width="200" height="auto" alt="Digital Face Representation" style="display: block; max-width: 100%; width: 200px; height: auto;">
+                  <!-- Head -->
+                  <td width="200" align="center" valign="middle" class="stack-column">
+                    <img src="images/faceimg.png" width="200" height="auto" alt="Face" style="display: block; max-width: 300px; width: 100%; filter: drop-shadow(0 0 20px rgba(0, 242, 255, 0.3));">
                   </td>
-                </tr>
-              </table>
-              <!--[if mso]>
-              </td>
-              <td valign="middle" width="380" align="left">
-              <![endif]-->
-              <table border="0" cellpadding="0" cellspacing="0" width="380" class="stack-column" style="display: inline-block; vertical-align: middle;">
-                <tr>
-                  <td align="left" valign="middle" style="padding-left: 20px;">
-                    <h1 class="hero-title" style="margin: 0; font-family: 'Inter', Arial, sans-serif; font-size: 38px; font-weight: 800; color: #ffffff; text-transform: uppercase; line-height: 1.15;">
+                  <!-- Copy -->
+                  <td align="left" valign="middle" style="padding: 0 40px;" class="stack-column">
+                    <h1 style="margin: 0; font-size: 48px; font-weight: 800; color: #ffffff; text-transform: uppercase; line-height: 1.12; letter-spacing: 0.025em;">
                       INTELLIGENCE THAT <span style="color: #00a8b5;">OPERATES.</span><br />
                       NOT JUST ASSISTS.
                     </h1>
-                    <table border="0" cellpadding="0" cellspacing="0" width="120" style="margin-top: 20px; margin-bottom: 20px;">
-                      <tr>
-                        <td height="2" bgcolor="#00f2ff" style="font-size: 2px; line-height: 2px;">&nbsp;</td>
-                      </tr>
+                    <table border="0" cellpadding="0" cellspacing="0" width="200" style="margin: 24px 0;">
+                      <tr><td height="2" bgcolor="#00f2ff" style="font-size: 2px; line-height: 2px;">&nbsp;</td></tr>
                     </table>
-                    <p style="margin: 0; font-family: 'Inter', Arial, sans-serif; font-size: 16px; color: #a0aec0; line-height: 1.55;">
+                    <p style="margin: 0; font-size: 18px; color: #a0aec0; line-height: 1.55; max-width: 560px;">
                       Vyuha.AI delivers agentic intelligence across Security, Governance &amp; Enterprise Operations.
                     </p>
                   </td>
+                  <!-- Isometric Stack (Using existing stackimage.png) -->
+                  <td width="450" align="right" valign="middle" class="stack-column">
+                    <img src="images/stackimage.png" width="450" height="auto" alt="Isometric Stack" style="display: block; max-width: 450px; width: 100%;">
+                  </td>
                 </tr>
               </table>
-              <!--[if mso]>
-              </td>
-              </tr>
-              </table>
-              <![endif]-->
-            </td>
-          </tr>
-          
-          <!-- Isometric Stack Image -->
-          <tr>
-            <td align="center" valign="top" style="padding-bottom: 40px;">
-              <img src="images/iso-stack.png" width="450" height="320" alt="Isometric Stack" style="display: block; max-width: 100%; width: 450px; height: auto;">
             </td>
           </tr>
 
           <!-- TRUST BAR -->
           <tr>
-            <td align="center" valign="top" style="padding-bottom: 40px;">
+            <td align="center" valign="top" style="padding-bottom: 50px;">
               <table border="0" cellpadding="0" cellspacing="0" width="100%">
                 <tr>
-                  <!-- Item 1 -->
-                  <td class="stack-column" width="180" align="center" valign="middle" style="padding-bottom: 20px;">
+                  <td align="center" valign="middle">
                     <table border="0" cellpadding="0" cellspacing="0">
                       <tr>
-                        <td valign="middle" style="padding-right: 12px;">
-                          <img src="images/icon-trust-ai.png" width="52" height="52" alt="AI Icon" style="display: block; width: 52px; height: 52px;">
+                        <!-- Trust 1 -->
+                        <td valign="middle" style="padding-right: 16px;" class="stack-column">
+                          <svg viewBox="0 0 48 48" width="52" height="52" style="color: #00f2ff; filter: drop-shadow(0 0 4px rgba(0, 242, 255, 0.55));">
+                            <g stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round">
+                              <path d="M24 10 V4 M20 10 L18 6 M28 10 L30 6" />
+                              <circle cx="24" cy="3" r="1.5" fill="currentColor" stroke="none"/>
+                              <path d="M24 38 V44 M20 38 L18 42 M28 38 L30 42" />
+                              <circle cx="24" cy="45" r="1.5" fill="currentColor" stroke="none"/>
+                              <path d="M10 24 H4 M10 20 L6 18 M10 28 L6 30" />
+                              <circle cx="3" cy="24" r="1.5" fill="currentColor" stroke="none"/>
+                              <path d="M38 24 H44 M38 20 L42 18 M38 28 L42 30" />
+                              <circle cx="45" cy="24" r="1.5" fill="currentColor" stroke="none"/>
+                            </g>
+                            <rect x="14" y="14" width="20" height="20" rx="4" fill="none" stroke="currentColor" stroke-width="1.5"/>
+                            <text x="24" y="28" fill="currentColor" font-size="12" font-weight="700" font-family="Inter,sans-serif" text-anchor="middle" stroke="none">AI</text>
+                          </svg>
                         </td>
-                        <td valign="middle" align="left" style="font-family: 'Inter', Arial, sans-serif; font-size: 14px; font-weight: 500; color: #ffffff; line-height: 1.35;">
-                          Powered by<br/>
-                          <strong style="color: #00a8b5;">Airrived</strong>
+                        <td valign="middle" align="left" style="font-size: 18px; font-weight: 500; color: #ffffff; line-height: 1.35; padding-right: 40px;" class="stack-column">
+                          Powered by<br/><strong style="color: #00a8b5;">Airrived</strong>
                         </td>
-                      </tr>
-                    </table>
-                  </td>
-                  
-                  <!-- Item 2 -->
-                  <td class="stack-column" width="180" align="center" valign="middle" style="padding-bottom: 20px;">
-                    <table border="0" cellpadding="0" cellspacing="0">
-                      <tr>
-                        <td valign="middle" style="padding-right: 12px;">
-                          <img src="images/icon-trust-scale.png" width="52" height="52" alt="Scale Icon" style="display: block; width: 52px; height: 52px;">
+                        
+                        <!-- Divider -->
+                        <td valign="middle" style="padding-right: 40px;" class="stack-column">
+                          <table border="0" cellpadding="0" cellspacing="0"><tr><td width="1" height="48" bgcolor="#00f2ff" style="opacity: 0.6;"></td></tr></table>
                         </td>
-                        <td valign="middle" align="left" style="font-family: 'Inter', Arial, sans-serif; font-size: 14px; font-weight: 500; color: #ffffff; line-height: 1.35;">
-                          Operationalized<br/>
-                          at Scale
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
 
-                  <!-- Item 3 -->
-                  <td class="stack-column" width="180" align="center" valign="middle" style="padding-bottom: 20px;">
-                    <table border="0" cellpadding="0" cellspacing="0">
-                      <tr>
-                        <td valign="middle" style="padding-right: 12px;">
-                          <img src="images/icon-trust-gartner.png" width="52" height="52" alt="Gartner Icon" style="display: block; width: 52px; height: 52px;">
+                        <!-- Trust 2 -->
+                        <td valign="middle" style="padding-right: 16px;" class="stack-column">
+                          <svg viewBox="0 0 48 48" width="52" height="52" style="color: #00f2ff; filter: drop-shadow(0 0 4px rgba(0, 242, 255, 0.55));">
+                            <g stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                              <line x1="6" y1="42" x2="42" y2="42" />
+                              <rect x="10" y="32" width="6" height="10" />
+                              <rect x="21" y="22" width="6" height="20" />
+                              <rect x="32" y="12" width="6" height="30" />
+                              <path d="M10 37 L16 33 M21 27 L27 23 M32 17 L38 13" />
+                              <line x1="8" y1="20" x2="30" y2="4" />
+                              <polyline points="22 4 30 4 30 12" />
+                            </g>
+                          </svg>
                         </td>
-                        <td valign="middle" align="left" style="font-family: 'Inter', Arial, sans-serif; font-size: 14px; font-weight: 500; color: #ffffff; line-height: 1.35;">
-                          Recognized by<br/>
-                          <strong style="color: #00a8b5;">Gartner</strong>
+                        <td valign="middle" align="left" style="font-size: 18px; font-weight: 500; color: #ffffff; line-height: 1.35; padding-right: 40px;" class="stack-column">
+                          Operationalized<br/>at Scale
+                        </td>
+
+                        <!-- Divider -->
+                        <td valign="middle" style="padding-right: 40px;" class="stack-column">
+                          <table border="0" cellpadding="0" cellspacing="0"><tr><td width="1" height="48" bgcolor="#00f2ff" style="opacity: 0.6;"></td></tr></table>
+                        </td>
+
+                        <!-- Trust 3 -->
+                        <td valign="middle" style="padding-right: 16px;" class="stack-column">
+                          <svg viewBox="0 0 48 48" width="52" height="52" style="color: #00f2ff; filter: drop-shadow(0 0 4px rgba(0, 242, 255, 0.55));">
+                            <g stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                              <path d="M24 10 L32 14 V24 C32 32 26 38 24 40 C22 38 16 32 16 24 V14 Z" />
+                              <path d="M24 18 L27 24 H21 Z" />
+                              <path d="M24 46 C12 44 4 30 6 16" />
+                              <path d="M24 46 C36 44 44 30 42 16" />
+                            </g>
+                          </svg>
+                        </td>
+                        <td valign="middle" align="left" style="font-size: 18px; font-weight: 500; color: #ffffff; line-height: 1.35;" class="stack-column">
+                          Recognized by<br/><strong style="color: #00a8b5;">Gartner</strong>
                         </td>
                       </tr>
                     </table>
@@ -187,307 +181,253 @@
           <!-- COMPARISON ROW -->
           <tr>
             <td align="center" valign="top" style="padding-bottom: 24px;">
-              <!--[if mso]>
               <table border="0" cellpadding="0" cellspacing="0" width="100%">
-              <tr>
-              <td valign="top" width="220">
-              <![endif]-->
-              <table border="0" cellpadding="0" cellspacing="0" width="220" class="stack-column" style="display: inline-block; vertical-align: top;">
                 <tr>
-                  <td class="panel-pad" align="left" valign="top" bgcolor="#001428" style="background-color: #001428; border: 1px solid #00f2ff; border-radius: 12px; padding: 24px;">
-                    <h2 style="margin: 0 0 20px 0; font-family: 'Inter', Arial, sans-serif; font-size: 16px; font-weight: 700; color: #00f2ff; letter-spacing: 0.1em; text-transform: uppercase;">WHY MOST AI INITIATIVES FAIL</h2>
-                    <!-- Fail list item 1 -->
-                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom: 16px;">
-                      <tr>
-                        <td valign="top" width="44" style="padding-right: 12px;">
-                          <img src="images/icon-fail-1.png" width="44" height="44" alt="Icon" style="display: block; width: 44px; height: 44px;">
-                        </td>
-                        <td valign="top">
-                          <strong style="font-family: 'Inter', Arial, sans-serif; font-size: 15px; font-weight: 600; color: #ffffff; display: block; margin-bottom: 4px;">Heavy Engineering</strong>
-                          <p style="margin: 0; font-family: 'Inter', Arial, sans-serif; font-size: 14px; color: #8899aa; line-height: 1.45;">Months of development before value.</p>
-                        </td>
-                      </tr>
-                    </table>
-                    <!-- Fail list item 2 -->
-                    <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom: 16px;">
-                      <tr>
-                        <td valign="top" width="44" style="padding-right: 12px;">
-                          <img src="images/icon-fail-2.png" width="44" height="44" alt="Icon" style="display: block; width: 44px; height: 44px;">
-                        </td>
-                        <td valign="top">
-                          <strong style="font-family: 'Inter', Arial, sans-serif; font-size: 15px; font-weight: 600; color: #ffffff; display: block; margin-bottom: 4px;">Narrow Point Solutions</strong>
-                          <p style="margin: 0; font-family: 'Inter', Arial, sans-serif; font-size: 14px; color: #8899aa; line-height: 1.45;">Disconnected tools solving isolated problems.</p>
-                        </td>
-                      </tr>
-                    </table>
-                    <!-- Fail list item 3 -->
-                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                      <tr>
-                        <td valign="top" width="44" style="padding-right: 12px;">
-                          <img src="images/icon-fail-3.png" width="44" height="44" alt="Icon" style="display: block; width: 44px; height: 44px;">
-                        </td>
-                        <td valign="top">
-                          <strong style="font-family: 'Inter', Arial, sans-serif; font-size: 15px; font-weight: 600; color: #ffffff; display: block; margin-bottom: 4px;">Legacy RPA &amp; SOAR Debt</strong>
-                          <p style="margin: 0; font-family: 'Inter', Arial, sans-serif; font-size: 14px; color: #8899aa; line-height: 1.45;">Static automation built for yesterday's challenges.</p>
-                        </td>
-                      </tr>
-                    </table>
+                  <!-- Left Panel (35%) -->
+                  <td width="35%" valign="top" style="padding-right: 12px;" class="stack-column">
+                    <div class="panel" style="background-color: rgba(0, 20, 40, 0.62); border: 1px solid rgba(0, 242, 255, 0.35); box-shadow: 0 0 8px rgba(0, 242, 255, 0.35); border-radius: 12px; padding: 24px;">
+                      <h2 style="margin: 0 0 28px 0; font-size: 18px; font-weight: 700; color: #00f2ff; letter-spacing: 0.1em; text-transform: uppercase;">WHY MOST AI INITIATIVES FAIL</h2>
+                      
+                      <!-- Item 1 -->
+                      <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom: 20px;">
+                        <tr>
+                          <td valign="top" width="50" style="padding-right: 16px;">
+                            <svg viewBox="0 0 24 24" width="44" height="44" style="color: #00f2ff; filter: drop-shadow(0 0 4px rgba(0, 242, 255, 0.55));">
+                              <circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="1.4"/>
+                              <path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1l2.1-2.1M17 7l2.1-2.1" stroke="currentColor" stroke-width="1.4"/>
+                            </svg>
+                          </td>
+                          <td valign="top">
+                            <strong style="font-size: 18px; font-weight: 600; color: #ffffff; display: block; margin-bottom: 5px;">Heavy Engineering</strong>
+                            <p style="margin: 0; font-size: 15px; color: #8899aa; line-height: 1.45;">Months of development before value.</p>
+                          </td>
+                        </tr>
+                      </table>
+
+                      <!-- Item 2 -->
+                      <table border="0" cellpadding="0" cellspacing="0" width="100%" style="margin-bottom: 20px;">
+                        <tr>
+                          <td valign="top" width="50" style="padding-right: 16px;">
+                            <svg viewBox="0 0 24 24" width="44" height="44" style="color: #00f2ff; filter: drop-shadow(0 0 4px rgba(0, 242, 255, 0.55));">
+                              <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.4"/>
+                              <circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.4"/>
+                              <circle cx="12" cy="12" r="1" fill="currentColor"/>
+                              <line x1="12" y1="3" x2="12" y2="7" stroke="currentColor" stroke-width="1.4"/>
+                              <line x1="12" y1="17" x2="12" y2="21" stroke="currentColor" stroke-width="1.4"/>
+                              <line x1="3" y1="12" x2="7" y2="12" stroke="currentColor" stroke-width="1.4"/>
+                              <line x1="17" y1="12" x2="21" y2="12" stroke="currentColor" stroke-width="1.4"/>
+                            </svg>
+                          </td>
+                          <td valign="top">
+                            <strong style="font-size: 18px; font-weight: 600; color: #ffffff; display: block; margin-bottom: 5px;">Narrow Point Solutions</strong>
+                            <p style="margin: 0; font-size: 15px; color: #8899aa; line-height: 1.45;">Disconnected tools solving isolated problems.</p>
+                          </td>
+                        </tr>
+                      </table>
+
+                      <!-- Item 3 -->
+                      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+                          <td valign="top" width="50" style="padding-right: 16px;">
+                            <svg viewBox="0 0 24 24" width="44" height="44" style="color: #00f2ff; filter: drop-shadow(0 0 4px rgba(0, 242, 255, 0.55));">
+                              <path d="M10 13a5 5 0 007.54.54l3-3a5 5 0 00-7.07-7.07l-1.72 1.71" fill="none" stroke="currentColor" stroke-width="1.4"/>
+                              <path d="M14 11a5 5 0 00-7.54-.54l-3 3a5 5 0 007.07 7.07l1.71-1.71" fill="none" stroke="currentColor" stroke-width="1.4"/>
+                            </svg>
+                          </td>
+                          <td valign="top">
+                            <strong style="font-size: 18px; font-weight: 600; color: #ffffff; display: block; margin-bottom: 5px;">Legacy RPA &amp; SOAR Debt</strong>
+                            <p style="margin: 0; font-size: 15px; color: #8899aa; line-height: 1.45;">Static automation built for yesterday's challenges.</p>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                  </td>
+                  
+                  <!-- Right Panel (65%) -->
+                  <td width="65%" valign="top" style="padding-left: 12px;" class="stack-column">
+                    <div class="panel" style="background-color: rgba(0, 20, 40, 0.62); border: 1px solid rgba(0, 242, 255, 0.35); box-shadow: 0 0 8px rgba(0, 242, 255, 0.35); border-radius: 12px; padding: 24px; height: 100%;">
+                      <h2 style="margin: 0 0 28px 0; font-size: 18px; font-weight: 700; color: #00f2ff; letter-spacing: 0.1em; text-transform: uppercase;">BUILT FOR ENTERPRISES THAT OPERATE AT SCALE</h2>
+                      
+                      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+                          <!-- Scale 1 -->
+                          <td width="20%" align="center" valign="top" style="padding: 16px 12px; border-right: 1px solid rgba(0, 242, 255, 0.12);" class="stack-column">
+                            <svg viewBox="0 0 24 24" width="56" height="56" style="color: #00f2ff; margin-bottom: 12px; filter: drop-shadow(0 0 4px rgba(0, 242, 255, 0.55));">
+                              <path d="M12 3l7 3v5c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V6l7-3z" fill="none" stroke="currentColor" stroke-width="1.4"/>
+                              <path d="M9 12l2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+                            </svg>
+                            <strong style="display: block; font-size: 15px; color: #00f2ff; margin-bottom: 10px;">Agentic SOC</strong>
+                            <p style="margin: 0; font-size: 14px; color: #8899aa; line-height: 1.45;">24×7 autonomous security operations</p>
+                          </td>
+                          <!-- Scale 2 -->
+                          <td width="20%" align="center" valign="top" style="padding: 16px 12px; border-right: 1px solid rgba(0, 242, 255, 0.12);" class="stack-column">
+                            <svg viewBox="0 0 24 24" width="56" height="56" style="color: #00f2ff; margin-bottom: 12px; filter: drop-shadow(0 0 4px rgba(0, 242, 255, 0.55));">
+                              <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.4"/>
+                              <ellipse cx="12" cy="12" rx="9" ry="4" fill="none" stroke="currentColor" stroke-width="1"/>
+                              <line x1="12" y1="3" x2="12" y2="21" stroke="currentColor" stroke-width="1"/>
+                              <circle cx="12" cy="8" r="1.5" fill="currentColor"/><circle cx="8" cy="14" r="1.5" fill="currentColor"/>
+                              <circle cx="16" cy="14" r="1.5" fill="currentColor"/>
+                            </svg>
+                            <strong style="display: block; font-size: 15px; color: #00f2ff; margin-bottom: 10px;">Threat Intelligence Ops</strong>
+                            <p style="margin: 0; font-size: 14px; color: #8899aa; line-height: 1.45;">Contextual intelligence from signal to action</p>
+                          </td>
+                          <!-- Scale 3 -->
+                          <td width="20%" align="center" valign="top" style="padding: 16px 12px; border-right: 1px solid rgba(0, 242, 255, 0.12);" class="stack-column">
+                            <svg viewBox="0 0 24 24" width="56" height="56" style="color: #00f2ff; margin-bottom: 12px; filter: drop-shadow(0 0 4px rgba(0, 242, 255, 0.55));">
+                              <path d="M12 3l7 3v5c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V6l7-3z" fill="none" stroke="currentColor" stroke-width="1.4"/>
+                              <circle cx="12" cy="11" r="2.5" fill="none" stroke="currentColor" stroke-width="1.2"/>
+                              <path d="M9 15c0-1.5 1.3-3 3-3s3 1.5 3 3" fill="none" stroke="currentColor" stroke-width="1.2"/>
+                            </svg>
+                            <strong style="display: block; font-size: 15px; color: #00f2ff; margin-bottom: 10px;">Shadow AI Governance</strong>
+                            <p style="margin: 0; font-size: 14px; color: #8899aa; line-height: 1.45;">Secure and compliant enterprise AI adoption</p>
+                          </td>
+                          <!-- Scale 4 -->
+                          <td width="20%" align="center" valign="top" style="padding: 16px 12px; border-right: 1px solid rgba(0, 242, 255, 0.12);" class="stack-column">
+                            <svg viewBox="0 0 24 24" width="56" height="56" style="color: #00f2ff; margin-bottom: 12px; filter: drop-shadow(0 0 4px rgba(0, 242, 255, 0.55));">
+                              <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.4"/>
+                              <line x1="12" y1="3" x2="12" y2="21" stroke="currentColor" stroke-width="1.4"/>
+                              <line x1="3" y1="12" x2="21" y2="12" stroke="currentColor" stroke-width="1.4"/>
+                            </svg>
+                            <strong style="display: block; font-size: 15px; color: #00f2ff; margin-bottom: 10px;">Vulnerability Management</strong>
+                            <p style="margin: 0; font-size: 14px; color: #8899aa; line-height: 1.45;">Risk-based prioritization beyond CVSS scores</p>
+                          </td>
+                          <!-- Scale 5 -->
+                          <td width="20%" align="center" valign="top" style="padding: 16px 12px;" class="stack-column">
+                            <svg viewBox="0 0 24 24" width="56" height="56" style="color: #00f2ff; margin-bottom: 12px; filter: drop-shadow(0 0 4px rgba(0, 242, 255, 0.55));">
+                              <rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="1.4"/>
+                              <circle cx="9" cy="12" r="2.5" fill="none" stroke="currentColor" stroke-width="1.2"/>
+                              <line x1="14" y1="10" x2="18" y2="10" stroke="currentColor" stroke-width="1.2"/>
+                              <line x1="14" y1="14" x2="17" y2="14" stroke="currentColor" stroke-width="1.2"/>
+                            </svg>
+                            <strong style="display: block; font-size: 15px; color: #00f2ff; margin-bottom: 10px;">Identity Governance</strong>
+                            <p style="margin: 0; font-size: 14px; color: #8899aa; line-height: 1.45;">Continuous, policy-driven access intelligence</p>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
                   </td>
                 </tr>
               </table>
-              <!--[if mso]>
-              </td>
-              <td valign="top" width="360" style="padding-left: 16px;">
-              <![endif]-->
-              <table border="0" cellpadding="0" cellspacing="0" width="360" class="stack-column" style="display: inline-block; vertical-align: top; margin-left: 16px;">
-                <tr>
-                  <td class="panel-pad" align="left" valign="top" bgcolor="#001428" style="background-color: #001428; border: 1px solid #00f2ff; border-radius: 12px; padding: 24px;">
-                    <h2 style="margin: 0 0 20px 0; font-family: 'Inter', Arial, sans-serif; font-size: 16px; font-weight: 700; color: #00f2ff; letter-spacing: 0.1em; text-transform: uppercase;">BUILT FOR ENTERPRISES THAT OPERATE AT SCALE</h2>
-                    
-                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                      <tr>
-                        <td valign="top" width="50%" style="padding: 10px; border-right: 1px solid rgba(0,242,255,0.12); border-bottom: 1px solid rgba(0,242,255,0.12);" align="center">
-                          <img src="images/icon-scale-1.png" width="48" height="48" alt="Icon" style="display: block; margin-bottom: 8px;">
-                          <strong style="display: block; font-family: 'Inter', Arial, sans-serif; font-size: 13px; color: #00f2ff; margin-bottom: 6px;">Agentic SOC</strong>
-                          <p style="margin: 0; font-family: 'Inter', Arial, sans-serif; font-size: 12px; color: #8899aa;">24x7 autonomous security operations</p>
-                        </td>
-                        <td valign="top" width="50%" style="padding: 10px; border-bottom: 1px solid rgba(0,242,255,0.12);" align="center">
-                          <img src="images/icon-scale-2.png" width="48" height="48" alt="Icon" style="display: block; margin-bottom: 8px;">
-                          <strong style="display: block; font-family: 'Inter', Arial, sans-serif; font-size: 13px; color: #00f2ff; margin-bottom: 6px;">Threat Intelligence Ops</strong>
-                          <p style="margin: 0; font-family: 'Inter', Arial, sans-serif; font-size: 12px; color: #8899aa;">Contextual intelligence from signal to action</p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td valign="top" width="50%" style="padding: 10px; border-right: 1px solid rgba(0,242,255,0.12); border-bottom: 1px solid rgba(0,242,255,0.12);" align="center">
-                          <img src="images/icon-scale-3.png" width="48" height="48" alt="Icon" style="display: block; margin-bottom: 8px;">
-                          <strong style="display: block; font-family: 'Inter', Arial, sans-serif; font-size: 13px; color: #00f2ff; margin-bottom: 6px;">Shadow AI Governance</strong>
-                          <p style="margin: 0; font-family: 'Inter', Arial, sans-serif; font-size: 12px; color: #8899aa;">Secure and compliant enterprise AI adoption</p>
-                        </td>
-                        <td valign="top" width="50%" style="padding: 10px; border-bottom: 1px solid rgba(0,242,255,0.12);" align="center">
-                          <img src="images/icon-scale-4.png" width="48" height="48" alt="Icon" style="display: block; margin-bottom: 8px;">
-                          <strong style="display: block; font-family: 'Inter', Arial, sans-serif; font-size: 13px; color: #00f2ff; margin-bottom: 6px;">Vulnerability Management</strong>
-                          <p style="margin: 0; font-family: 'Inter', Arial, sans-serif; font-size: 12px; color: #8899aa;">Risk-based prioritization beyond CVSS scores</p>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td valign="top" width="50%" style="padding: 10px; border-right: 1px solid rgba(0,242,255,0.12);" align="center">
-                          <img src="images/icon-scale-5.png" width="48" height="48" alt="Icon" style="display: block; margin-bottom: 8px;">
-                          <strong style="display: block; font-family: 'Inter', Arial, sans-serif; font-size: 13px; color: #00f2ff; margin-bottom: 6px;">Identity Governance</strong>
-                          <p style="margin: 0; font-family: 'Inter', Arial, sans-serif; font-size: 12px; color: #8899aa;">Continuous, policy-driven access intelligence</p>
-                        </td>
-                        <td valign="top" width="50%" style="padding: 10px;" align="center">
-                          &nbsp;
-                        </td>
-                      </tr>
-                    </table>
-                  </td>
-                </tr>
-              </table>
-              <!--[if mso]>
-              </td>
-              </tr>
-              </table>
-              <![endif]-->
             </td>
           </tr>
 
           <!-- FEATURES + PROCESS -->
           <tr>
             <td align="center" valign="top" style="padding-bottom: 24px;">
-              <!--[if mso]>
               <table border="0" cellpadding="0" cellspacing="0" width="100%">
-              <tr>
-              <td valign="top" width="220">
-              <![endif]-->
-              <table border="0" cellpadding="0" cellspacing="0" width="220" class="stack-column" style="display: inline-block; vertical-align: top;">
                 <tr>
-                  <td class="panel-pad" align="left" valign="top" bgcolor="#001428" style="background-color: #001428; border: 1px solid #00f2ff; border-radius: 12px; padding: 24px;">
-                    <h2 style="margin: 0 0 20px 0; font-family: 'Inter', Arial, sans-serif; font-size: 16px; font-weight: 700; color: #00f2ff; letter-spacing: 0.1em; text-transform: uppercase;">WHY VYUHA.AI?</h2>
-                    
-                    <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                      <tr>
-                        <td valign="middle" width="24" style="padding-bottom: 14px;">
-                          <span style="font-family: 'Inter', Arial, sans-serif; color: #00f2ff; font-weight: 800; font-size: 20px; line-height: 1;">&#10003;</span>
-                        </td>
-                        <td valign="middle" style="font-family: 'Inter', Arial, sans-serif; font-size: 15px; font-weight: 500; color: #ffffff; padding-bottom: 14px;">
-                          Agentic by Design
-                        </td>
-                      </tr>
-                      <tr>
-                        <td valign="middle" width="24" style="padding-bottom: 14px;">
-                          <span style="font-family: 'Inter', Arial, sans-serif; color: #00f2ff; font-weight: 800; font-size: 20px; line-height: 1;">&#10003;</span>
-                        </td>
-                        <td valign="middle" style="font-family: 'Inter', Arial, sans-serif; font-size: 15px; font-weight: 500; color: #ffffff; padding-bottom: 14px;">
-                          Platform, Not Point Solution
-                        </td>
-                      </tr>
-                      <tr>
-                        <td valign="middle" width="24" style="padding-bottom: 14px;">
-                          <span style="font-family: 'Inter', Arial, sans-serif; color: #00f2ff; font-weight: 800; font-size: 20px; line-height: 1;">&#10003;</span>
-                        </td>
-                        <td valign="middle" style="font-family: 'Inter', Arial, sans-serif; font-size: 15px; font-weight: 500; color: #ffffff; padding-bottom: 14px;">
-                          Explainable &amp; Governed AI
-                        </td>
-                      </tr>
-                      <tr>
-                        <td valign="middle" width="24" style="padding-bottom: 14px;">
-                          <span style="font-family: 'Inter', Arial, sans-serif; color: #00f2ff; font-weight: 800; font-size: 20px; line-height: 1;">&#10003;</span>
-                        </td>
-                        <td valign="middle" style="font-family: 'Inter', Arial, sans-serif; font-size: 15px; font-weight: 500; color: #ffffff; padding-bottom: 14px;">
-                          Operationalized at Enterprise Scale
-                        </td>
-                      </tr>
-                      <tr>
-                        <td valign="middle" width="24">
-                          <span style="font-family: 'Inter', Arial, sans-serif; color: #00f2ff; font-weight: 800; font-size: 20px; line-height: 1;">&#10003;</span>
-                        </td>
-                        <td valign="middle" style="font-family: 'Inter', Arial, sans-serif; font-size: 15px; font-weight: 500; color: #ffffff;">
-                          Continuous Learning &amp; Intelligence
-                        </td>
-                      </tr>
-                    </table>
+                  <!-- Left Panel (35%) -->
+                  <td width="35%" valign="top" style="padding-right: 12px;" class="stack-column">
+                    <div class="panel" style="background-color: rgba(0, 20, 40, 0.62); border: 1px solid rgba(0, 242, 255, 0.35); box-shadow: 0 0 8px rgba(0, 242, 255, 0.35); border-radius: 12px; padding: 24px; height: 100%;">
+                      <h2 style="margin: 0 0 28px 0; font-size: 18px; font-weight: 700; color: #00f2ff; letter-spacing: 0.1em; text-transform: uppercase;">WHY VYUHA.AI?</h2>
+                      
+                      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+                          <td valign="middle" width="30" style="padding-bottom: 15px;"><span style="color: #00f2ff; font-weight: 800; font-size: 24px; text-shadow: 0 0 10px rgba(0, 242, 255, 0.8);">✓</span></td>
+                          <td valign="middle" style="font-size: 16px; font-weight: 500; color: #ffffff; padding-bottom: 15px;">Agentic by Design</td>
+                        </tr>
+                        <tr>
+                          <td valign="middle" width="30" style="padding-bottom: 15px;"><span style="color: #00f2ff; font-weight: 800; font-size: 24px; text-shadow: 0 0 10px rgba(0, 242, 255, 0.8);">✓</span></td>
+                          <td valign="middle" style="font-size: 16px; font-weight: 500; color: #ffffff; padding-bottom: 15px;">Platform, Not Point Solution</td>
+                        </tr>
+                        <tr>
+                          <td valign="middle" width="30" style="padding-bottom: 15px;"><span style="color: #00f2ff; font-weight: 800; font-size: 24px; text-shadow: 0 0 10px rgba(0, 242, 255, 0.8);">✓</span></td>
+                          <td valign="middle" style="font-size: 16px; font-weight: 500; color: #ffffff; padding-bottom: 15px;">Explainable &amp; Governed AI</td>
+                        </tr>
+                        <tr>
+                          <td valign="middle" width="30" style="padding-bottom: 15px;"><span style="color: #00f2ff; font-weight: 800; font-size: 24px; text-shadow: 0 0 10px rgba(0, 242, 255, 0.8);">✓</span></td>
+                          <td valign="middle" style="font-size: 16px; font-weight: 500; color: #ffffff; padding-bottom: 15px;">Operationalized at Enterprise Scale</td>
+                        </tr>
+                        <tr>
+                          <td valign="middle" width="30"><span style="color: #00f2ff; font-weight: 800; font-size: 24px; text-shadow: 0 0 10px rgba(0, 242, 255, 0.8);">✓</span></td>
+                          <td valign="middle" style="font-size: 16px; font-weight: 500; color: #ffffff;">Continuous Learning &amp; Intelligence</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </td>
+                  
+                  <!-- Right Panel (65%) -->
+                  <td width="65%" valign="top" style="padding-left: 12px;" class="stack-column">
+                    <div class="panel" style="background-color: rgba(0, 20, 40, 0.62); border: 1px solid rgba(0, 242, 255, 0.35); box-shadow: 0 0 8px rgba(0, 242, 255, 0.35); border-radius: 12px; padding: 24px; height: 100%;">
+                      <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                        <tr>
+                          <td width="20%" align="center" valign="top" style="padding: 12px;" class="stack-column">
+                            <div style="border: 1px solid rgba(0, 242, 255, 0.2); border-radius: 8px; background-color: #020c15; padding: 20px 12px; height: 100%;">
+                              <span style="display: block; font-size: 24px; font-weight: 700; color: #00f2ff; margin-bottom: 16px;">01<div style="width: 24px; height: 2px; background-color: #00f2ff; margin: 8px auto 0;"></div></span>
+                              <strong style="display: block; font-size: 13px; color: #00f2ff; text-transform: uppercase; margin-bottom: 12px;">INVESTIGATE INCIDENTS</strong>
+                              <p style="margin: 0; font-size: 12px; color: #a0aec0;">AI agents autonomously analyze alerts and root causes.</p>
+                            </div>
+                          </td>
+                          <td width="20%" align="center" valign="top" style="padding: 12px;" class="stack-column">
+                            <div style="border: 1px solid rgba(0, 242, 255, 0.2); border-radius: 8px; background-color: #020c15; padding: 20px 12px; height: 100%;">
+                              <span style="display: block; font-size: 24px; font-weight: 700; color: #00f2ff; margin-bottom: 16px;">02<div style="width: 24px; height: 2px; background-color: #00f2ff; margin: 8px auto 0;"></div></span>
+                              <strong style="display: block; font-size: 13px; color: #00f2ff; text-transform: uppercase; margin-bottom: 12px;">AUTOMATE REMEDIATION</strong>
+                              <p style="margin: 0; font-size: 12px; color: #a0aec0;">Execute policy-driven response actions.</p>
+                            </div>
+                          </td>
+                          <td width="20%" align="center" valign="top" style="padding: 12px;" class="stack-column">
+                            <div style="border: 1px solid rgba(0, 242, 255, 0.2); border-radius: 8px; background-color: #020c15; padding: 20px 12px; height: 100%;">
+                              <span style="display: block; font-size: 24px; font-weight: 700; color: #00f2ff; margin-bottom: 16px;">03<div style="width: 24px; height: 2px; background-color: #00f2ff; margin: 8px auto 0;"></div></span>
+                              <strong style="display: block; font-size: 13px; color: #00f2ff; text-transform: uppercase; margin-bottom: 12px;">GENERATE KNOWLEDGE</strong>
+                              <p style="margin: 0; font-size: 12px; color: #a0aec0;">Transform incident learnings into documentation.</p>
+                            </div>
+                          </td>
+                          <td width="20%" align="center" valign="top" style="padding: 12px;" class="stack-column">
+                            <div style="border: 1px solid rgba(0, 242, 255, 0.2); border-radius: 8px; background-color: #020c15; padding: 20px 12px; height: 100%;">
+                              <span style="display: block; font-size: 24px; font-weight: 700; color: #00f2ff; margin-bottom: 16px;">04<div style="width: 24px; height: 2px; background-color: #00f2ff; margin: 8px auto 0;"></div></span>
+                              <strong style="display: block; font-size: 13px; color: #00f2ff; text-transform: uppercase; margin-bottom: 12px;">ORCHESTRATE ACTIONS</strong>
+                              <p style="margin: 0; font-size: 12px; color: #a0aec0;">Coordinate workflows across security, IT, ops.</p>
+                            </div>
+                          </td>
+                          <td width="20%" align="center" valign="top" style="padding: 12px;" class="stack-column">
+                            <div style="border: 1px solid rgba(0, 242, 255, 0.2); border-radius: 8px; background-color: #020c15; padding: 20px 12px; height: 100%;">
+                              <span style="display: block; font-size: 24px; font-weight: 700; color: #00f2ff; margin-bottom: 16px;">05<div style="width: 24px; height: 2px; background-color: #00f2ff; margin: 8px auto 0;"></div></span>
+                              <strong style="display: block; font-size: 13px; color: #00f2ff; text-transform: uppercase; margin-bottom: 12px;">REDUCE MTTR</strong>
+                              <p style="margin: 0; font-size: 12px; color: #a0aec0;">Accelerate investigation and response.</p>
+                            </div>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
                   </td>
                 </tr>
               </table>
-              <!--[if mso]>
-              </td>
-              <td valign="top" width="360" style="padding-left: 16px;">
-              <![endif]-->
-              <table border="0" cellpadding="0" cellspacing="0" width="360" class="stack-column" style="display: inline-block; vertical-align: top; margin-left: 16px;">
-                <tr>
-                  <td class="panel-pad" align="left" valign="top" bgcolor="#001428" style="background-color: #001428; border: 1px solid #00f2ff; border-radius: 12px; padding: 24px;">
-                    <!-- Process step 1 -->
-                    <table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#020c15" style="background-color: #020c15; border: 1px solid rgba(0,242,255,0.2); margin-bottom: 12px;">
-                      <tr>
-                        <td valign="middle" width="50" align="center" style="padding: 12px;">
-                          <span style="display: block; font-family: 'Inter', Arial, sans-serif; font-size: 20px; font-weight: 700; color: #00f2ff;">01</span>
-                        </td>
-                        <td valign="middle" style="padding: 12px 12px 12px 0;">
-                          <strong style="display: block; font-family: 'Inter', Arial, sans-serif; font-size: 12px; color: #00f2ff; letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 4px;">INVESTIGATE INCIDENTS</strong>
-                          <p style="margin: 0; font-family: 'Inter', Arial, sans-serif; font-size: 12px; color: #a0aec0; line-height: 1.45;">AI agents autonomously analyze alerts and root causes.</p>
-                        </td>
-                      </tr>
-                    </table>
-                    
-                    <!-- Process step 2 -->
-                    <table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#020c15" style="background-color: #020c15; border: 1px solid rgba(0,242,255,0.2); margin-bottom: 12px;">
-                      <tr>
-                        <td valign="middle" width="50" align="center" style="padding: 12px;">
-                          <span style="display: block; font-family: 'Inter', Arial, sans-serif; font-size: 20px; font-weight: 700; color: #00f2ff;">02</span>
-                        </td>
-                        <td valign="middle" style="padding: 12px 12px 12px 0;">
-                          <strong style="display: block; font-family: 'Inter', Arial, sans-serif; font-size: 12px; color: #00f2ff; letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 4px;">AUTOMATE REMEDIATION</strong>
-                          <p style="margin: 0; font-family: 'Inter', Arial, sans-serif; font-size: 12px; color: #a0aec0; line-height: 1.45;">Execute policy-driven response actions.</p>
-                        </td>
-                      </tr>
-                    </table>
-
-                    <!-- Process step 3 -->
-                    <table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#020c15" style="background-color: #020c15; border: 1px solid rgba(0,242,255,0.2); margin-bottom: 12px;">
-                      <tr>
-                        <td valign="middle" width="50" align="center" style="padding: 12px;">
-                          <span style="display: block; font-family: 'Inter', Arial, sans-serif; font-size: 20px; font-weight: 700; color: #00f2ff;">03</span>
-                        </td>
-                        <td valign="middle" style="padding: 12px 12px 12px 0;">
-                          <strong style="display: block; font-family: 'Inter', Arial, sans-serif; font-size: 12px; color: #00f2ff; letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 4px;">GENERATE KNOWLEDGE ARTICLES</strong>
-                          <p style="margin: 0; font-family: 'Inter', Arial, sans-serif; font-size: 12px; color: #a0aec0; line-height: 1.45;">Transform incident learnings into structured documentation.</p>
-                        </td>
-                      </tr>
-                    </table>
-
-                    <!-- Process step 4 -->
-                    <table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#020c15" style="background-color: #020c15; border: 1px solid rgba(0,242,255,0.2); margin-bottom: 12px;">
-                      <tr>
-                        <td valign="middle" width="50" align="center" style="padding: 12px;">
-                          <span style="display: block; font-family: 'Inter', Arial, sans-serif; font-size: 20px; font-weight: 700; color: #00f2ff;">04</span>
-                        </td>
-                        <td valign="middle" style="padding: 12px 12px 12px 0;">
-                          <strong style="display: block; font-family: 'Inter', Arial, sans-serif; font-size: 12px; color: #00f2ff; letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 4px;">ORCHESTRATE ACTIONS</strong>
-                          <p style="margin: 0; font-family: 'Inter', Arial, sans-serif; font-size: 12px; color: #a0aec0; line-height: 1.45;">Coordinate workflows across security, IT, and operations.</p>
-                        </td>
-                      </tr>
-                    </table>
-
-                    <!-- Process step 5 -->
-                    <table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#020c15" style="background-color: #020c15; border: 1px solid rgba(0,242,255,0.2);">
-                      <tr>
-                        <td valign="middle" width="50" align="center" style="padding: 12px;">
-                          <span style="display: block; font-family: 'Inter', Arial, sans-serif; font-size: 20px; font-weight: 700; color: #00f2ff;">05</span>
-                        </td>
-                        <td valign="middle" style="padding: 12px 12px 12px 0;">
-                          <strong style="display: block; font-family: 'Inter', Arial, sans-serif; font-size: 12px; color: #00f2ff; letter-spacing: 0.04em; text-transform: uppercase; margin-bottom: 4px;">REDUCE MTTR</strong>
-                          <p style="margin: 0; font-family: 'Inter', Arial, sans-serif; font-size: 12px; color: #a0aec0; line-height: 1.45;">Accelerate investigation, decision-making, and response.</p>
-                        </td>
-                      </tr>
-                    </table>
-
-                  </td>
-                </tr>
-              </table>
-              <!--[if mso]>
-              </td>
-              </tr>
-              </table>
-              <![endif]-->
             </td>
           </tr>
 
           <!-- FOOTER CTA -->
           <tr>
             <td align="center" valign="top" style="padding-bottom: 24px;">
-              <table border="0" cellpadding="0" cellspacing="0" width="100%" bgcolor="#00050f" style="border: 1px solid #00f2ff; border-radius: 12px; background-color: #00050f;">
+              <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border: 1px solid #00f2ff; border-radius: 12px; background-color: rgba(0, 20, 40, 0.62); box-shadow: 0 0 8px rgba(0, 242, 255, 0.35);">
                 <tr>
-                  <td align="center" valign="middle" style="padding: 24px;">
-                    <!--[if mso]>
+                  <td align="center" valign="middle" style="padding: 12px 18px;">
                     <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                    <tr>
-                    <td valign="middle" width="120" align="center">
-                    <![endif]-->
-                    <table border="0" cellpadding="0" cellspacing="0" width="120" class="stack-column" style="display: inline-block; vertical-align: middle;">
                       <tr>
-                        <td align="center" valign="middle">
-                          <img src="images/qr_code.png" width="110" height="110" alt="QR Code" style="display: block; width: 110px; height: 110px; background-color: #ffffff; padding: 4px; border-radius: 8px;">
+                        <!-- QR Code -->
+                        <td width="150" align="center" valign="middle" class="stack-column">
+                          <img src="images/qr_code.png" width="110" height="110" alt="QR Code" style="display: block; width: 110px; height: 110px;">
                         </td>
-                      </tr>
-                    </table>
-                    <!--[if mso]>
-                    </td>
-                    <td valign="middle" width="280" align="center">
-                    <![endif]-->
-                    <table border="0" cellpadding="0" cellspacing="0" width="260" class="stack-column" style="display: inline-block; vertical-align: middle; margin: 0 10px;">
-                      <tr>
-                        <td align="center" valign="middle">
-                          <h2 style="margin: 0 0 12px 0; font-family: 'Inter', Arial, sans-serif; font-size: 16px; font-weight: 700; color: #ffffff; letter-spacing: 0.04em;">
+                        <!-- Text -->
+                        <td align="center" valign="middle" class="stack-column" style="padding: 0 20px;">
+                          <h2 style="margin: 0 0 12px 0; font-size: 18px; font-weight: 700; color: #ffffff; letter-spacing: 0.04em;">
                             SCAN TO EXPERIENCE <span style="color: #00a8b5;">VYUHA.AI IN ACTION</span>
                           </h2>
-                          
-                          <table border="0" cellpadding="0" cellspacing="0" bgcolor="#000f1e" style="background-color: #000f1e; border: 1px solid rgba(0,242,255,0.2); border-radius: 6px;">
-                            <tr>
-                              <td align="center" valign="middle" style="padding: 10px 16px; font-family: 'Inter', Arial, sans-serif; font-size: 13px; color: #8899aa;">
-                                <img src="images/icon-cal.png" width="16" height="16" alt="Calendar" style="display: inline-block; vertical-align: middle; margin-right: 6px;">
-                                Book a personalized demo with Cache Digitech's AI &amp; Security Experts
-                              </td>
-                            </tr>
-                          </table>
+                          <div style="display: inline-block; padding: 10px 20px; border: 1px solid rgba(0, 242, 255, 0.2); border-radius: 6px; background-color: rgba(0, 15, 30, 0.5); font-size: 13px; color: #8899aa;">
+                            <svg viewBox="0 0 24 24" width="16" height="16" style="color: #00f2ff; vertical-align: middle; margin-right: 6px; display: inline-block;">
+                              <rect x="3" y="4" width="18" height="18" rx="2" fill="none" stroke="currentColor" stroke-width="1.4"/>
+                              <line x1="3" y1="10" x2="21" y2="10" stroke="currentColor" stroke-width="1.4"/>
+                              <line x1="8" y1="2" x2="8" y2="6" stroke="currentColor" stroke-width="1.4"/>
+                              <line x1="16" y1="2" x2="16" y2="6" stroke="currentColor" stroke-width="1.4"/>
+                            </svg>
+                            Book a personalized demo with Cache Digitech's AI &amp; Security Experts
+                          </div>
+                        </td>
+                        <!-- Footer Image -->
+                        <td width="560" align="right" valign="middle" class="stack-column">
+                          <img src="images/footer_image.png" width="560" height="170" alt="Portal" style="display: block; width: 100%; max-width: 560px; height: auto;">
                         </td>
                       </tr>
                     </table>
-                    <!--[if mso]>
-                    </td>
-                    <td valign="middle" width="150" align="center">
-                    <![endif]-->
-                    <table border="0" cellpadding="0" cellspacing="0" width="140" class="stack-column" style="display: inline-block; vertical-align: middle;">
-                      <tr>
-                        <td align="center" valign="middle">
-                          <img src="images/footer_image.png" width="140" height="auto" alt="Portal" style="display: block; width: 140px; height: auto;">
-                        </td>
-                      </tr>
-                    </table>
-                    <!--[if mso]>
-                    </td>
-                    </tr>
-                    </table>
-                    <![endif]-->
                   </td>
                 </tr>
               </table>
